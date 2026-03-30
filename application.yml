@@ -1,0 +1,16 @@
+eureka:
+  client:
+    service-url:
+       defaultZone: http://vm-node-a:8761/eureka/ , http://vm-node-b:8761/eureka/ , http://vm-node-c:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+logging:
+  level:
+    com.mahesha: DEBUG
+    org.springframework.web: INFO
+    org.hibernate.sql: DEBUG
